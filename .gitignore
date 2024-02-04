@@ -1,0 +1,6 @@
+./.config/tmux/plugins/
+./.config/nvim/LICENSE
+./.config/nvim/README.md
+./.config/nvim/stylua.toml
+./.config/nvim/lazyvim.json
+./.config/nvim/lazy-lock.json
