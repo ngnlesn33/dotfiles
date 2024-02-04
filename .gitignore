@@ -4,3 +4,4 @@
 .config/nvim/stylua.toml
 .config/nvim/lazyvim.json
 .config/nvim/lazy-lock.json
+.config/nvim/.neoconf.json
