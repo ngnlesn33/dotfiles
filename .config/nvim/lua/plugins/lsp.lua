@@ -30,13 +30,14 @@ return {
           end,
         },
         volar = {
+          enabled = true,
           root_dir = function(...)
             return require("lspconfig.util").root_pattern("package.json", "tsconfig.json", ".git")(...)
           end,
           filetypes = {
             "vue",
-            -- "typescript",
-            -- "javascript",
+            "typescript",
+            "javascript",
             -- "json",
           },
           settings = {
@@ -49,7 +50,9 @@ return {
             },
           },
         },
+        -- disable tsserver if  volar is enabled
         tsserver = {
+          enabled = false,
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
           end,

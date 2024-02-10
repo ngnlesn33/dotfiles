@@ -10,6 +10,7 @@ return {
         opts = { skip = true },
       })
       opts.presets.lsp_doc_border = true
+      opts.presets.long_message_to_split = true
     end,
   },
   {
