@@ -30,7 +30,7 @@ return {
           end,
         },
         volar = {
-          enabled = true,
+          enabled = false,
           root_dir = function(...)
             return require("lspconfig.util").root_pattern("package.json", "tsconfig.json", ".git")(...)
           end,
@@ -52,7 +52,7 @@ return {
         },
         -- disable tsserver if  volar is enabled
         tsserver = {
-          enabled = false,
+          enabled = true,
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
